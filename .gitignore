@@ -1,0 +1,11 @@
+node_modules/
+lib/
+.nyc_output/
+coverage/
+/log/
+logs/
+/contracts/
+/cypress/
+
+.env
+.eslintcache

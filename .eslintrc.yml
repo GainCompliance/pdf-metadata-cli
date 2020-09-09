@@ -1,0 +1,6 @@
+root: true
+extends: '@gaincompliance'
+overrides:
+  - files: ['*.js']
+    rules:
+      no-console: off
