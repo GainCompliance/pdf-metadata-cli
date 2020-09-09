@@ -51,11 +51,11 @@ async function readUrlDocumentMetadata(url) {
 
 export async function pdfStats(options) {
   if ('Local' === options.location) {
-    await readLocalDocumentMetadata('./assets/1.pdf');
+    await readLocalDocumentMetadata(options.path);
   }
 
   if ('URL' === options.location) {
-    await readUrlDocumentMetadata('https://pdf-lib.js.org/assets/with_cropbox.pdf');
+    await readUrlDocumentMetadata(options.path);
   }
 
   return true;
