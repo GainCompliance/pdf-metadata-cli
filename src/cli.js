@@ -9,7 +9,7 @@ async function promptForOptions(options) {
   questions.push({
     type: 'list',
     name: 'location',
-    message: 'Where would you like to read the file from',
+    message: 'Where would you like to read the file from?',
     choices: ['Local', 'URL'],
     default: defaultReadLocation
   });
@@ -17,7 +17,7 @@ async function promptForOptions(options) {
   questions.push({
     type: 'string',
     name: 'path',
-    message: 'What is the path you would like to read'
+    message: 'What is the file path you would like to read?'
   });
 
   const answers = await inquirer.prompt(questions);
