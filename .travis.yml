@@ -1,0 +1,7 @@
+version: ~> 1.0
+notifications:
+  email: false
+import:
+  - source: form8ion/.travis-ci:node.yml
+  - source: GainCompliance/.travis-ci:authenticated-semantic-release.yml
+before_install: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
