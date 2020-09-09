@@ -22,7 +22,6 @@ async function logMetadata(pdfDoc) {
     console.log('Height:', page.getHeight());
     console.log('Width:', page.getWidth());
     console.log('Size:', page.getSize());
-    console.log('==================================');
   });
 }
 
